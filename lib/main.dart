@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:json_data_parse/jsonParseSingleObject./jsonParseSingleObjectView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,14 +14,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const JsonParseStringObjectView()
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
+  const MyHomePage({super.key});
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
