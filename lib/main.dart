@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:json_data_parse/Example/view/Examples.dart';
 import 'package:json_data_parse/jsonParseSingleObject./jsonParseView.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const JsonParseStringObjectView()
+      home: const Examples()
     );
   }
 }
